@@ -1,0 +1,156 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: url('../img/glogal_bg.jpg') no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border: 0px solid transparent;
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    padding: 0px;
+}
+
+#nav a.router-link-exact-active {
+    color: #42b983;
+}
+
+
+.home {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transform-origin: 50% 50%;
+    transform: scaleY(1) translateZ(0);
+    transition: 0.3s all ease-out;
+}
+
+
+
+.home-content {
+    display: flex;
+    align-self: center;
+    width: 60%;
+    height: 650px;
+    color: #fff;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #284242, #2f5455);
+    box-shadow: 20px 20px 60px #7fa09a, -20px -20px 60px #a9bdb9;
+    border: none;
+    flex-direction: column;
+}
+
+.profile {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.img-profile {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #7fa09a;
+    box-shadow: 4px 4px 10px #7fa09a, -4px -4px 10px #a9bdb9;
+}
+
+
+.cotation-bloc {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cotation-bloc-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 100px;
+}
+
+
+.experience-bloc {
+    border-top: 1px solid #48615c;
+    padding: 20px;
+    margin-top: 20px;
+    padding-top: 0px;
+    height: 50vh;
+    overflow-x: scroll;
+}
+
+.experience-bloc-item {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 10px;
+    /* background-color: springgreen; */
+    border-radius: 1px 10px;
+    margin-right: 20px;
+    box-shadow: 2px 2px 5px #7fa09a, -1px -1px 3px #a9bdb9;
+    cursor: pointer;
+}
+
+.experience-bloc-item:hover {
+    background-color: #1f3535;
+    transition: background-color 1s;
+}
+
+
+/* Animation manager */
+.flip-enter-active {
+    transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transform-origin: 50% 50%;
+}
+
+.flip-leave-active {
+    transform-origin: 50% 50%;
+    transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.flip-enter-from,
+.flip-leave-to {
+    transform-origin: 50% 50%;
+    transform: scaleY(0) translateZ(0);
+    opacity: 0;
+}
+
+/* Utilities Classes */
+.text-center {
+    text-align: center;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.padding-30 {
+    padding: 30px;
+}
+
+.padding-40 {
+    padding: 40px;
+}
+
+.padding-50 {
+    padding: 50px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

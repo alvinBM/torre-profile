@@ -1,7 +1,9 @@
 <template>
-  <router-view/>
+  <div>
+    <router-view/>
+  </div>
 </template>
-<style src="./assets/main.css"> </style>
+<style src="./assets/css/main.css"> </style>
 <style>
 
 </style>
