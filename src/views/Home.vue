@@ -12,8 +12,7 @@
 
         <h2 class="text-center">Alvin BAUMA</h2>
         <span
-          class="text-center"
-          style="padding: 0px 100px; margin: -10px 0px 10px"
+          class="text-center description-profile"
           >4 years Web developer with forward-thinking development professional
           bringing expertise in PHP, Java, SQL, HTML, CSS, JavaScript.</span
         >
@@ -63,6 +62,7 @@
 
 <script>
 import SkillDetail from "@/components/SkillDetail.vue";
+import {getProfileByUsername} from "../apis/profile";
 
 export default {
   name: "Home",
@@ -74,10 +74,18 @@ export default {
       isDetailShowing: false,
     };
   },
+  mounted() {
+    this.searchUserProfile("alvinbm");
+  },
   methods: {
     skillDetail() {
       this.isDetailShowing = !this.isDetailShowing;
     },
+    searchUserProfile(username){
+      getProfileByUsername(username).then(res => {
+        console.log("Resultat after", res)
+      })
+    }
   },
 };
 </script>

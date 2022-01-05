@@ -16,6 +16,10 @@
           </div>
       </div>
 
+      <div class="detail-body">
+          Bien joué les amis
+      </div>
+
       
     </div>
 </template>
@@ -48,6 +52,10 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 20px;
+}
+
+.detail-body{
+  padding: 0px 20px;
 }
 
 .detail-header .title{

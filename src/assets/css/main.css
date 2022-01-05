@@ -39,6 +39,8 @@ body {
 
 
 
+
+
 .home-content {
     display: flex;
     align-self: center;
@@ -52,6 +54,8 @@ body {
     flex-direction: column;
 }
 
+
+
 .profile {
     display: flex;
     width: 100%;
@@ -64,6 +68,24 @@ body {
     object-fit: cover;
     border: 2px solid #7fa09a;
     box-shadow: 4px 4px 10px #7fa09a, -4px -4px 10px #a9bdb9;
+}
+
+.description-profile{
+    padding: 0px 100px; margin: -10px 0px 10px
+}
+
+@media (max-width: 767px) {
+    .home-content {
+        width: 95%;
+        font-size: 13px;
+    }
+    .img-profile {
+        width: 70px;
+        height: 70px;
+    }
+    .description-profile{
+        padding: 0px 10px; margin: -10px 0px 10px
+    }
 }
 
 
@@ -88,7 +110,7 @@ body {
     margin-top: 20px;
     padding-top: 0px;
     height: 50vh;
-    overflow-x: scroll;
+    overflow-y: scroll;
 }
 
 .experience-bloc-item {
